@@ -1,0 +1,18 @@
+[
+  {
+    "from_institution": "FC",
+    "from_course": "CSCI 123",
+    "to_institution": "CSUF",
+    "to_courses": ["CPSC 121A", "CPSC 121L"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "CSCI 133",
+    "to_institution": "CSUF",
+    "to_courses": ["CPSC 131"],
+    "type": "course_to_course",
+    "source": "manual"
+  }
+]

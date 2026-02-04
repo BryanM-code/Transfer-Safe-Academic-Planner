@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method="post" action="/report" class="bg-white rounded-2xl shadow p-6 space-y-6">
+  <div>
+    <label class="block font-semibold mb-2">Completed Fullerton College courses</label>
+    <select name="completed_courses" multiple size="10"
+      class="w-full border rounded-xl p-3">
+      {% for c in fc_courses %}
+        <option value="{{ c }}">{{ c }}</option>
+      {% endfor %}
+    </select>
+    <p class="text-sm text-slate-500 mt-2">Hold Ctrl (Windows) / Cmd (Mac) to select multiple.</p>
+  </div>
+
+  <div>
+    <label class="block font-semibold mb-2">Transferable units completed</label>
+    <input name="units" type="number" min="0" max="200"
+      class="w-full border rounded-xl p-3" value="0" />
+  </div>
+
+  <div>
+    <label class="block font-semibold mb-2">Golden Four completed</label>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {% for area in golden_four %}
+      <label class="flex items-center gap-2 bg-slate-50 border rounded-xl p-3">
+        <input type="checkbox" name="golden_four" value="{{ area }}" />
+        <span>{{ area }}</span>
+      </label>
+      {% endfor %}
+    </div>
+  </div>
+
+  <button class="w-full bg-black text-white rounded-xl py-3 font-semibold">
+    Generate Report
+  </button>
+</form>
+{% endblock %}

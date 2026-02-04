@@ -1,0 +1,12 @@
+[
+  {
+    "program_id": "CSUF:CS:2026",
+    "to_institution": "CSUF",
+    "program_name": "Computer Science",
+    "year": "2025-2026",
+    "required_from_cc": {
+      "cs": ["CSCI 123", "CSCI 133", "CSCI 241", "CYBR 106"],
+      "math": ["MATH 151", "MATH 152", "MATH 170", "MATH 171"]
+    }
+  }
+]

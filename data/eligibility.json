@@ -1,0 +1,10 @@
+{
+  "system": "CSU",
+  "min_units": 60,
+  "golden_four": [
+    "Oral Communication",
+    "Written Communication",
+    "Critical Thinking",
+    "Quantitative Reasoning"
+  ]
+}

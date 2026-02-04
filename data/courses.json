@@ -1,0 +1,23 @@
+[
+  { "institution_id": "FC", "code": "CSCI 123", "units": 4 },
+  { "institution_id": "FC", "code": "CSCI 133", "units": 4 },
+  { "institution_id": "FC", "code": "CSCI 241", "units": 4 },
+  { "institution_id": "FC", "code": "CYBR 106", "units": 3 },
+  { "institution_id": "FC", "code": "CSCI 223", "units": 4 },
+  { "institution_id": "FC", "code": "MATH 151", "units": 4 },
+  { "institution_id": "FC", "code": "MATH 152", "units": 4 },
+  { "institution_id": "FC", "code": "MATH 170", "units": 5 },
+  { "institution_id": "FC", "code": "MATH 171", "units": 4 },
+
+  { "institution_id": "CSUF", "code": "CPSC 120A", "units": 2 },
+  { "institution_id": "CSUF", "code": "CPSC 120L", "units": 1 },
+  { "institution_id": "CSUF", "code": "CPSC 121A", "units": 2 },
+  { "institution_id": "CSUF", "code": "CPSC 121L", "units": 1 },
+  { "institution_id": "CSUF", "code": "CPSC 131",  "units": 3 },
+  { "institution_id": "CSUF", "code": "CPSC 240",  "units": 3 },
+  { "institution_id": "CSUF", "code": "CPSC 153",  "units": 3 },
+  { "institution_id": "CSUF", "code": "CPSC 223C", "units": 3 },
+  { "institution_id": "CSUF", "code": "MATH 150A", "units": 4 },
+  { "institution_id": "CSUF", "code": "MATH 150B", "units": 4 },
+  { "institution_id": "CSUF", "code": "MATH 170A", "units": 4 }
+]
