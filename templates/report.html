@@ -2,7 +2,14 @@
 {% block content %}
 <div class="space-y-6">
   <div class="bg-white rounded-2xl shadow p-6">
+    <h2 class="text-xl font-bold mb-2">{{ r.source_institution_name }} -> {{ r.destination_institution_name }}</h2>
+    <p class="text-slate-700">{{ r.program.program_name }} ({{ r.program.year }})</p>
+    <p class="text-sm text-slate-500 mt-2">{{ r.eligibility_rule.label }}</p>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow p-6">
     <h2 class="text-xl font-bold mb-2">CSU General Eligibility</h2>
+    <p class="text-slate-700">Units counted: {{ r.total_units }} total ({{ r.selected_units }} from selected courses + {{ r.additional_units }} additional units)</p>
     {% if r.eligible_general %}
       <p class="text-green-700 font-semibold"> Eligible (based on this MVP ruleset)</p>
     {% else %}
@@ -15,7 +22,7 @@
   </div>
 
   <div class="bg-white rounded-2xl shadow p-6">
-    <h2 class="text-xl font-bold mb-3">FC → CSUF Equivalencies</h2>
+    <h2 class="text-xl font-bold mb-3">{{ r.source_institution_name }} -> {{ r.destination_institution_name }} Equivalencies</h2>
     <div class="divide-y">
       {% for row in r.equivalencies %}
         <div class="py-3">
@@ -34,7 +41,9 @@
 
   <div class="bg-white rounded-2xl shadow p-6">
     <h2 class="text-xl font-bold mb-3">Major Prep (MVP)</h2>
-    {% if r.missing_cc_prep|length == 0 %}
+    {% if not r.prep_available %}
+      <p class="text-amber-700 font-semibold">{{ r.prep_note }}</p>
+    {% elif r.missing_cc_prep|length == 0 %}
       <p class="text-green-700 font-semibold"> Completed all required CC prep courses in your dataset.</p>
     {% else %}
       <p class="text-red-700 font-semibold"> Missing CC prep courses:</p>
@@ -44,6 +53,6 @@
     {% endif %}
   </div>
 
-  <a href="/" class="inline-block text-slate-700 underline">← Back</a>
+  <a href="/" class="inline-block text-slate-700 underline"><- Back</a>
 </div>
 {% endblock %}

@@ -1,4 +1,8 @@
 [
   { "id": "FC", "name": "Fullerton College", "segment": "CCC" },
-  { "id": "CSUF", "name": "CSU Fullerton", "segment": "CSU" }
+  { "id": "IVC", "name": "Irvine Valley College", "segment": "CCC" },
+  { "id": "SAC", "name": "Santa Ana College", "segment": "CCC" },
+  { "id": "CSUF", "name": "CSU Fullerton", "segment": "CSU" },
+  { "id": "CSULB", "name": "CSU Long Beach", "segment": "CSU" },
+  { "id": "SJSU", "name": "San Jose State University", "segment": "CSU" }
 ]

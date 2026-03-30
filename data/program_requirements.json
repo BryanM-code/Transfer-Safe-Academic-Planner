@@ -4,9 +4,119 @@
     "to_institution": "CSUF",
     "program_name": "Computer Science",
     "year": "2025-2026",
-    "required_from_cc": {
-      "cs": ["CSCI 123", "CSCI 133", "CSCI 241", "CYBR 106"],
-      "math": ["MATH 151", "MATH 152", "MATH 170", "MATH 171"]
+    "eligibility_rule_id": "CSU_TRANSFER",
+    "source_requirements": {
+      "FC": {
+        "label": "Fullerton College lower-division prep",
+        "groups": {
+          "Computer Science": ["CSCI 123", "CSCI 133", "CSCI 241", "CYBR 106"],
+          "Mathematics": ["MATH 151", "MATH 152", "MATH 170", "MATH 171"]
+        }
+      },
+      "IVC": {
+        "label": "Irvine Valley College lower-division prep",
+        "groups": {
+          "Computer Science": ["ICS 31", "ICS 32", "ICS 33"],
+          "Mathematics": ["MATH 3A", "MATH 3B", "MATH 24"]
+        }
+      }
+    }
+  },
+  {
+    "program_id": "CSUF:MATH:2026",
+    "to_institution": "CSUF",
+    "program_name": "Mathematics",
+    "year": "2025-2026",
+    "eligibility_rule_id": "CSU_TRANSFER",
+    "source_requirements": {
+      "FC": {
+        "label": "Fullerton College math prep",
+        "groups": {
+          "Calculus": ["MATH 151", "MATH 152"],
+          "Proof and structures": ["MATH 170", "MATH 171"]
+        }
+      },
+      "IVC": {
+        "label": "Irvine Valley College math prep",
+        "groups": {
+          "Calculus": ["MATH 3A", "MATH 3B"],
+          "Additional preparation": ["MATH 24"]
+        }
+      }
+    }
+  },
+  {
+    "program_id": "CSUF:BUS:2026",
+    "to_institution": "CSUF",
+    "program_name": "Business Administration",
+    "year": "2025-2026",
+    "eligibility_rule_id": "CSU_TRANSFER",
+    "source_requirements": {
+      "FC": {
+        "label": "Fullerton College business prep",
+        "groups": {
+          "Accounting": ["ACCT 101", "ACCT 102"],
+          "Economics": ["ECON 101", "ECON 102"],
+          "Quantitative skills": ["MATH 130"]
+        }
+      },
+      "IVC": {
+        "label": "Irvine Valley College business prep",
+        "groups": {
+          "Accounting": ["ACCT 1A", "ACCT 1B"],
+          "Economics": ["ECON 20A", "ECON 20B"],
+          "Quantitative skills": ["MATH 24"]
+        }
+      }
+    }
+  },
+  {
+    "program_id": "CSULB:CS:2026",
+    "to_institution": "CSULB",
+    "program_name": "Computer Science",
+    "year": "2025-2026",
+    "eligibility_rule_id": "CSU_TRANSFER",
+    "source_requirements": {
+      "FC": {
+        "label": "Fullerton College CS prep for Long Beach",
+        "groups": {
+          "Computer Science": ["CSCI 123", "CSCI 133", "CSCI 241"],
+          "Mathematics": ["MATH 151", "MATH 152"]
+        }
+      }
+    }
+  },
+  {
+    "program_id": "CSULB:BUS:2026",
+    "to_institution": "CSULB",
+    "program_name": "Business Administration",
+    "year": "2025-2026",
+    "eligibility_rule_id": "CSU_TRANSFER",
+    "source_requirements": {
+      "FC": {
+        "label": "Fullerton College business prep for Long Beach",
+        "groups": {
+          "Accounting": ["ACCT 101", "ACCT 102"],
+          "Economics": ["ECON 101", "ECON 102"],
+          "Quantitative skills": ["MATH 130"]
+        }
+      }
+    }
+  },
+  {
+    "program_id": "SJSU:SE:2026",
+    "to_institution": "SJSU",
+    "program_name": "Software Engineering",
+    "year": "2025-2026",
+    "eligibility_rule_id": "CSU_TRANSFER",
+    "source_requirements": {
+      "IVC": {
+        "label": "Irvine Valley College software engineering prep",
+        "groups": {
+          "Programming": ["ICS 31", "ICS 32", "ICS 33"],
+          "Mathematics": ["MATH 3A", "MATH 3B"]
+        }
+      }
     }
   }
 ]

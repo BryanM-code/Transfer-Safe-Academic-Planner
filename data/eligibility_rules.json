@@ -1,10 +1,14 @@
-{
-  "system": "CSU",
-  "min_units": 60,
-  "golden_four": [
-    "Oral Communication",
-    "Written Communication",
-    "Critical Thinking",
-    "Quantitative Reasoning"
-  ]
-}
+[
+  {
+    "id": "CSU_TRANSFER",
+    "label": "CSU Upper-Division Transfer Baseline",
+    "system": "CSU",
+    "min_units": 60,
+    "golden_four": [
+      "Oral Communication",
+      "Written Communication",
+      "Critical Thinking",
+      "Quantitative Reasoning"
+    ]
+  }
+]
