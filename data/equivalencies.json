@@ -14,5 +14,149 @@
     "to_courses": ["CPSC 131"],
     "type": "course_to_course",
     "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "MATH 151",
+    "to_institution": "CSUF",
+    "to_courses": ["MATH 150A"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "MATH 152",
+    "to_institution": "CSUF",
+    "to_courses": ["MATH 150B"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "ACCT 101",
+    "to_institution": "CSUF",
+    "to_courses": ["ACCT 201A"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "ACCT 102",
+    "to_institution": "CSUF",
+    "to_courses": ["ACCT 201B"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "ECON 101",
+    "to_institution": "CSUF",
+    "to_courses": ["ECON 201"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "ECON 102",
+    "to_institution": "CSUF",
+    "to_courses": ["ECON 202"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "CSCI 123",
+    "to_institution": "CSULB",
+    "to_courses": ["CECS 174"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "CSCI 133",
+    "to_institution": "CSULB",
+    "to_courses": ["CECS 225"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "MATH 151",
+    "to_institution": "CSULB",
+    "to_courses": ["MATH 122"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "FC",
+    "from_course": "MATH 152",
+    "to_institution": "CSULB",
+    "to_courses": ["MATH 123"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "ICS 31",
+    "to_institution": "CSUF",
+    "to_courses": ["CPSC 121A", "CPSC 121L"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "ICS 32",
+    "to_institution": "CSUF",
+    "to_courses": ["CPSC 131"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "MATH 3A",
+    "to_institution": "CSUF",
+    "to_courses": ["MATH 150A"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "MATH 3B",
+    "to_institution": "CSUF",
+    "to_courses": ["MATH 150B"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "ICS 31",
+    "to_institution": "SJSU",
+    "to_courses": ["CMPE 30"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "ICS 32",
+    "to_institution": "SJSU",
+    "to_courses": ["CMPE 50"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "MATH 3A",
+    "to_institution": "SJSU",
+    "to_courses": ["MATH 30"],
+    "type": "course_to_course",
+    "source": "manual"
+  },
+  {
+    "from_institution": "IVC",
+    "from_course": "MATH 3B",
+    "to_institution": "SJSU",
+    "to_courses": ["MATH 31"],
+    "type": "course_to_course",
+    "source": "manual"
   }
 ]

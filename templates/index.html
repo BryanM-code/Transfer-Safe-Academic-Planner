@@ -1,8 +1,53 @@
 {% extends "layout.html" %}
 {% block content %}
-<form method="post" action="/report" class="bg-white rounded-2xl shadow p-6 space-y-6">
+<form method="get" action="/" class="bg-white rounded-2xl shadow p-6 space-y-4 mb-6">
   <div>
-    <label class="block font-semibold mb-2">Completed Fullerton College courses</label>
+    <h2 class="text-lg font-bold mb-1">Choose a transfer path</h2>
+    <p class="text-sm text-slate-600">Pick a source school, destination university, and major to load the available course list.</p>
+    <p class="text-sm text-amber-700 mt-2">This expanded dataset is a starter catalog of real schools and programs, but it is still incomplete and should be verified against official transfer resources.</p>
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-3">
+    <div>
+      <label class="block font-semibold mb-2">Community college</label>
+      <select name="from_inst" class="w-full border rounded-xl p-3">
+        {% for option in source_options %}
+          <option value="{{ option.id }}" {% if option.id == selected_source %}selected{% endif %}>{{ option.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-2">Destination university</label>
+      <select name="to_inst" class="w-full border rounded-xl p-3">
+        {% for option in destination_options %}
+          <option value="{{ option.id }}" {% if option.id == selected_destination %}selected{% endif %}>{{ option.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-2">Major / program</label>
+      <select name="program_id" class="w-full border rounded-xl p-3">
+        {% for program in program_options %}
+          <option value="{{ program.program_id }}" {% if program.program_id == selected_program_id %}selected{% endif %}>{{ program.program_name }} ({{ program.year }})</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+
+  <button class="bg-black text-white rounded-xl px-5 py-3 font-semibold">
+    Load Courses
+  </button>
+</form>
+
+<form method="post" action="/report" class="bg-white rounded-2xl shadow p-6 space-y-6">
+  <input type="hidden" name="from_inst" value="{{ selected_source }}" />
+  <input type="hidden" name="to_inst" value="{{ selected_destination }}" />
+  <input type="hidden" name="program_id" value="{{ selected_program_id }}" />
+
+  <div>
+    <label class="block font-semibold mb-2">Completed {{ selected_source_name }} courses</label>
     <select name="completed_courses" multiple size="10"
       class="w-full border rounded-xl p-3">
       {% for c in fc_courses %}
@@ -13,13 +58,15 @@
   </div>
 
   <div>
-    <label class="block font-semibold mb-2">Transferable units completed</label>
-    <input name="units" type="number" min="0" max="200"
+    <label class="block font-semibold mb-2">Additional transferable units completed</label>
+    <input name="extra_units" type="number" min="0" max="200"
       class="w-full border rounded-xl p-3" value="0" />
+    <p class="text-sm text-slate-500 mt-2">Use this for transferable units not already represented by the selected courses above.</p>
   </div>
 
   <div>
     <label class="block font-semibold mb-2">Golden Four completed</label>
+    <p class="text-sm text-slate-500 mb-2">Shown for the currently selected transfer rule.</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
       {% for area in golden_four %}
       <label class="flex items-center gap-2 bg-slate-50 border rounded-xl p-3">
